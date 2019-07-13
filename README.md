@@ -1,8 +1,10 @@
 ## Overview
 This is a progress diary for recapping what was a major progress but replaced by something better later.
 
-## Dweetio, Lambda, Cloudwatch, S3 
-*7-13-19 Ditched*
+## Software
+
+### Dweetio, Lambda, Cloudwatch, S3 
+*7-13-19 Ditched [AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)* (private repo for protection)
 
 Use HTTP GET and params to post data to Dweetio from the LTE shield. Then use Lambda to get data from Dweetio and insert into the database. Schedule Lambda trigger using Cloudwatch.
 
@@ -12,7 +14,7 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
 - packages and the .py file have to be at the same level in the deployment .zip, otherwise Lambda could not find them
 - be sure to modify the Handler in Function codes of of the Lambda setup to match the function name, otherwise Lambda coud not find the main function
 
-#### Codes 
+#### Files Breakdown
 *[AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)* (private repo for protection)
 - requirements.txt
 
@@ -25,3 +27,10 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
 - aerospeclambdards.py
 
   The main code that use requests library and Dweetio API to get data and use psycopg2 to query the database.
+  
+  
+  ## Firmware
+  ### SPS30 Particle Sensor
+  *6-18-19 Ditched (https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
+  
+  Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
