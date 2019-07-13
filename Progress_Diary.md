@@ -1,4 +1,6 @@
-## Dweetio, Lambda, Cloudwatch, S3 (7-13-19 Ditched) 
+## Dweetio, Lambda, Cloudwatch, S3 
+*7-13-19 Ditched*
+
 Use HTTP GET and params to post data to Dweetio from the LTE shield. Then use Lambda to get data from Dweetio and insert into the database. Schedule Lambda trigger using Cloudwatch.
 
 Lambda deployment package included all required packages and a .py file that defined a ```handler(event, context)``` function. The package was uploaded to S3 and linked to Lambda. Two aws CLI commands were written for copy-pasta to speed up the process.
