@@ -11,8 +11,17 @@ Note
 - packages and the .py file have to be at the same level in the deployment .zip, otherwise Lambda could not find them
 - be sure to modify the Handler in Function codes of of the Lambda setup to match the function name, otherwise Lambda coud not find the main function
 
-Codes - Repo [AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)
-- 
+Codes
+
+*[AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)* (private repo for protection)
+- requirements.txt
+
+  Requried packages. Psycopg2 needs to be built. Someone had do it for us. Follow his instructions in this github [psycopg2 to Lambda](https://github.com/jkehler/awslambda-psycopg2).
+  
 - AWSCLIcommands-Lambda.txt
 
   Two AWS CLI command to script uploading package to S3 and linking it to Lambda.
+  
+- aerospeclambdards.py
+
+  The main code that use requests library and Dweetio API to get data and use psycopg2 to query the database.
