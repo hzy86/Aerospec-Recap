@@ -4,7 +4,7 @@ This is a progress diary for recapping what was a major progress but replaced by
 ## Software
 
 ### Hologram Cloud, Lambda, API Gateway, S3
-*7-13-19 Current Version [AerospecUsedCodes/Hologram-Lambda-APIGateway-S3(https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3*
+*7-13-19 Current Version [AerospecUsedCodes/Hologram-Lambda-APIGateway-S3(https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3)*
 
 ### Dweetio, Lambda, Cloudwatch, S3 
 *7-13-19 Ditched [AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)*
