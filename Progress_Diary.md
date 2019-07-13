@@ -11,6 +11,8 @@ Note
 
 Codes - Repo AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3
 - LambdaPacakge37
+
   Deployed Lambda codes. To use them, CTRL+A to select all, right click on aerospeclambdards.py to zip them, run aws CLI command #1 in its parent folder to upload to S3, and finally run aws CLI command #2 to update Lambda codes.
 - AWSCLIcommands-Lambda.txt
+
   Two AWS CLI command to script uploading package to S3 and linking it to Lambda.
