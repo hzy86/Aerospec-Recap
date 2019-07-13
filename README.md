@@ -1,3 +1,5 @@
+This is a progress diary for recapping what was a major progress but replaced by something better.
+
 ## Dweetio, Lambda, Cloudwatch, S3 
 *7-13-19 Ditched*
 
