@@ -33,7 +33,10 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   
   
 ## Firmware
+### Plantower, VMA309, SIM7000
+*7-13-19 Current Version [Hologram-Plantower-Noise](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise)*
+
 ### SPS30 Particle Sensor
-*6-18-19 Ditched (https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
+*6-18-19 Ditched [sps30-LTE](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
 
 Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
