@@ -1,10 +1,13 @@
 ## Overview
-This is a progress diary for recapping what was a major progress but replaced by something better later.
+This is a progress diary for recapping what was a major progress but replaced by something better later. Code repo AerosepcUsedCodes is private for now.
 
 ## Software
 
+### Hologram Cloud, Lambda, API Gateway, S3
+*7-13-19 Current Version [AerospecUsedCodes/Hologram-Lambda-APIGateway-S3(https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3*
+
 ### Dweetio, Lambda, Cloudwatch, S3 
-*7-13-19 Ditched [AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)* (private repo for protection)
+*7-13-19 Ditched [AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)*
 
 Use HTTP GET and params to post data to Dweetio from the LTE shield. Then use Lambda to get data from Dweetio and insert into the database. Schedule Lambda trigger using Cloudwatch.
 
