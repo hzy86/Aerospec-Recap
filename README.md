@@ -29,8 +29,8 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   The main code that use requests library and Dweetio API to get data and use psycopg2 to query the database.
   
   
-  ## Firmware
-  ### SPS30 Particle Sensor
-  *6-18-19 Ditched (https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
-  
-  Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
+## Firmware
+### SPS30 Particle Sensor
+*6-18-19 Ditched (https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
+
+Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
