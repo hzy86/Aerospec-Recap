@@ -18,7 +18,7 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
 - be sure to modify the Handler in Function codes of of the Lambda setup to match the function name, otherwise Lambda coud not find the main function
 
 #### Files Breakdown
-*[AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)* (private repo for protection)
+*[AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)*
 - requirements.txt
 
   Requried packages. Psycopg2 needs to be built. Someone had do it for us. Follow his instructions in this github [psycopg2 to Lambda](https://github.com/jkehler/awslambda-psycopg2).
@@ -40,3 +40,6 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
 *6-18-19 Ditched [sps30-LTE](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
 
 Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
+
+### Twilio
+*7-17-19 Currently exploring [Twilio-prototype](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)*
