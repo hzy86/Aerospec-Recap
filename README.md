@@ -43,3 +43,5 @@ Gather particle information using sps30 sensor and upload it to Dweetio using SI
 
 ### Twilio
 *7-17-19 Currently exploring [Twilio-prototype](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)*
+
+Try to use Twilio for our product for its compactness.
