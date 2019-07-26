@@ -33,15 +33,24 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   
   
 ## Firmware
-### Plantower, VMA309, SIM7000
-*7-13-19 Current Version [Hologram-Plantower-Noise](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise)*
-
 ### SPS30 Particle Sensor
-*6-18-19 Ditched [sps30-LTE](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
+*6-18-19 Outdated [sps30-LTE](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
 
 Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
 
-### Twilio
+### Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol
+*7-13-19,7-25-19 Outdated [Hologram-Plantower-Noise-TCP](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise-TCP)*
+
+Also gather GPS info via SIM7000. 7-25 fix corrected GPS read.
+
+### Twilio, T-mobile Narrowband SIM
 *7-17-19 Currently exploring [Twilio-prototype](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)*
 
 Try to use Twilio for our product for its compactness.
+
+### Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol, Average data
+*7-26-19 Current Version [Hologram-TCP-Sensor-Average](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)*
+
+Sample data every xxx seconds, upload the average of the samples every 5 mins. 
+
+Solved a fun problem - consecutive ```dtostr(data, length, precision, buffer)``` might be using consecutive memory for buffers! We observed that if the buffer size of the last called ```dtostr``` equals to ```length``` (not enough space for the terminator char), the terminator would be stored in index 0 of the buffer used by the 2nd last ```dtostr```. As a result, Serial.print(the 2nd last buffer) would print nothing.
