@@ -28,6 +28,10 @@
   * settings.py for static url, media url, hosts, database, etc
   * deploy to Heroku - Gunicorn for running server, Whitenoise for serving static files, psycopg2 for database engine
 * NodeJS
+* AWS
+ * CLI and CLI scripts
+ * Lambda, API Gateway, S3, RDS (main responsibility)
+ * Elastric Beanstalk, CloudWatch
 
 *Backend*
   * database connection - schema design and db programmatically query
