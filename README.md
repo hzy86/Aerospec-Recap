@@ -1,5 +1,7 @@
 # Overview
-This is a progress diary for recapping what was a major progress but replaced by something better later. Code repo AerosepcUsedCodes is private for now.
+This is a progress diary for recapping what was a major progress but replaced by something better later. 
+
+Code repo AerosepcUsedCodes is private to protect our products in production. Please send me a messagew if you would like to see it via [Linkedin](https://www.linkedin.com/in/ziyi-huang86/) or Email hzy066@gmail.com.
 
 # Software
 
