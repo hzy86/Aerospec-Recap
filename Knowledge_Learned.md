@@ -1,12 +1,12 @@
-## LTE cellular communication
-*Driving a module - Bluetooth, LTE shields, etc*
+## IoT Communication
+*Firmware - Bluetooth, LTE shields, etc*
 * AT commands
 * UART protocol
 * SIM card setup and credentials
 
-*Transmitting, receiving, and using data*
-* IoT platform
-* webhook for real-time software hookup
+*Cloud platform - Transmitting, receiving, and using data*
+* IoT platform - Hologram Cloud
+* webhook and data routes for sending data to software in real-time
 * TCP, HTTP protocol, a bit of MQTT
 
 ## Sensors
