@@ -6,7 +6,7 @@ Code repo AerosepcUsedCodes is private to protect our products in production. Pl
 # Software
 
 ### Hologram Cloud, Lambda, API Gateway, S3
-*7-13-19 7-27-19 Current Version [AerospecUsedCodes/Hologram-Lambda-APIGateway-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3)*
+*7-13-19, 7-27-19 Current Version [AerospecUsedCodes/Hologram-Lambda-APIGateway-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3)*
 
 7-27-19 updated the Lambda codes to round time_created to the nearest 5 min and and insert into the db table new column ```time_label```. Also inserted device name and inserted into new column ```device_name```
 
@@ -37,20 +37,6 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   
   
 # Firmware
-### SPS30 Particle Sensor
-*6-18-19 Outdated [sps30-LTE](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
-
-Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
-
-### Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol
-*7-13-19,7-25-19 Outdated [Hologram-Plantower-Noise-TCP](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise-TCP)*
-
-Also gather GPS info via SIM7000. 7-25 fix corrected GPS read.
-
-### Twilio, T-mobile Narrowband SIM
-*7-17-19 Currently exploring [Twilio-prototype](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)*
-
-Try to use Twilio for our product for its compactness.
 
 ### Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol, Average data
 *7-26-19 Current Version [Hologram-TCP-Sensor-Average](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)*
@@ -58,3 +44,20 @@ Try to use Twilio for our product for its compactness.
 Sample data every xxx seconds, upload the average of the samples every 5 mins. 
 
 Solved a fun problem - consecutive ```dtostr(data, length, precision, buffer)``` might be using consecutive memory for buffers! We observed that if the buffer size of the last called ```dtostr``` equals to ```length``` (not enough space for the terminator char), the terminator would be stored in index 0 of the buffer used by the 2nd last ```dtostr```. As a result, Serial.print(the 2nd last buffer) would print nothing.
+
+### Twilio, T-mobile Narrowband SIM
+*7-17-19 Currently exploring [Twilio-prototype](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)*
+
+Try to use Twilio for our product for its compactness.
+
+### Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol
+*7-13-19,7-25-19 Outdated [Hologram-Plantower-Noise-TCP](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise-TCP)*
+
+Also gather GPS info via SIM7000. 7-25 fix corrected GPS read.
+
+### SPS30 Particle Sensor
+*6-18-19 Outdated [sps30-LTE](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
+
+Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
+
+
