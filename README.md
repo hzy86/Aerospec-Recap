@@ -1,10 +1,12 @@
-## Overview
+# Overview
 This is a progress diary for recapping what was a major progress but replaced by something better later. Code repo AerosepcUsedCodes is private for now.
 
-## Software
+# Software
 
 ### Hologram Cloud, Lambda, API Gateway, S3
-*7-13-19 Current Version [AerospecUsedCodes/Hologram-Lambda-APIGateway-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3)*
+*7-13-19 7-27-19 Current Version [AerospecUsedCodes/Hologram-Lambda-APIGateway-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3)*
+
+7-27-19 updated the Lambda codes to round time_created to the nearest 5 min and and insert into the db table new column ```time_label```. Also inserted device name and inserted into new column ```device_name```
 
 ### Dweetio, Lambda, Cloudwatch, S3 
 *7-13-19 Ditched [AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)*
@@ -32,7 +34,7 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   The main code that use requests library and Dweetio API to get data and use psycopg2 to query the database.
   
   
-## Firmware
+# Firmware
 ### SPS30 Particle Sensor
 *6-18-19 Outdated [sps30-LTE](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
 
