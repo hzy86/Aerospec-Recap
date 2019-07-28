@@ -18,15 +18,22 @@
 
 ## Software
 *Fullstack*
-* Django
-  * MTV model
-  * models - queries, migrations, model fields
-  * serve to the frontend - ```{{ data|safe }}``` syntax 
-  * template inheritances - ```{% extends base.html %}```
-  * template tags and decorators
-  * requirements.txt
-  * settings.py for static url, media url, hosts, database, etc
-  * deploy to Heroku - Gunicorn for running server, Whitenoise for serving static files, psycopg2 for database engine
+* Django & MTV
+  * Models
+   * models - queries, migrations, model fields
+   * usage of makemigrations and migrate, involving ```--fake```, ```--fake-initial```
+  * Templates
+   * serve data to the template - ```{{ data|safe }}``` syntax 
+   * template inheritances - ```{% extends base.html %}```
+   * template tags and decorators
+  * Views
+   * HTTPResponse to make a REST API
+   * render
+   * using models
+  * Management
+   * requirements.txt
+   * settings.py for static url, media url, hosts, database, etc
+   * deploy to Heroku - Gunicorn for running server, Whitenoise for serving static files, psycopg2 for database engine
 * NodeJS
 * AWS
  * CLI and CLI scripts
