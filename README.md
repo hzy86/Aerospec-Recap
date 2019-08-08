@@ -6,9 +6,12 @@ Code repo AerosepcUsedCodes is private to protect our products in production. Pl
 # Software
 
 ### Hologram Cloud, Lambda, API Gateway, S3
-*7-13-19, 7-27-19 Current Version [AerospecUsedCodes/Hologram-Lambda-APIGateway-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3)*
+*7-13-19, 7-27-19, 8-7-19 Current Version*
+[AerospecUsedCodes/Hologram-Lambda-APIGateway-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3)*
 
-7-27-19 updated the Lambda codes to round time_created to the nearest 5 min and and insert into the db table new column ```time_label```. Also inserted device name and inserted into new column ```device_name```
+8-7-19 modified round down function to accept the resolution as a parameter and changed device_name to integer field.
+
+7-27-19 updated the Lambda codes to round time_created to the nearest 5 min and and insert into the db table new column ```time_label```. Also inserted device name and inserted into new column ```device_name```.
 
 ### Dweetio, Lambda, Cloudwatch, S3 
 *7-13-19 Ditched [AerospecUsedCodes/Dweet-Lambda-Cloudwatch-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)*
@@ -38,8 +41,12 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   
 # Firmware
 
-### Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol, Average data
-*7-26-19 Current Version [Hologram-TCP-Sensor-Average](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)*
+### Plantower, VMA309, SIM7000, Hologram Cloud, TCP/IP, Average data
+*7-26-19 8-7-19 Current Version*
+
+[Hologram-TCP-Sensor-Average](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)*
+
+8-7-19 read and sent battery level instead of noise.
 
 Sample data every xxx seconds, upload the average of the samples every 5 mins. 
 
