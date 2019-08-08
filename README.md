@@ -48,9 +48,7 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
 # Firmware
 
 ## Plantower, VMA309, SIM7000, Hologram Cloud, TCP/IP, Average data
-*7-26-19 8-7-19 Current Version*
-
-[src](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)
+*7-26-19 8-7-19 Current Version* [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)
 
 8-7-19 read and sent battery level instead of noise.
 
