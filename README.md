@@ -7,7 +7,8 @@ Code repo AerosepcUsedCodes is private to protect our products in production. Pl
 
 ### Hologram Cloud, Lambda, API Gateway, S3
 *7-13-19, 7-27-19, 8-7-19 Current Version*
-[AerospecUsedCodes/Hologram-Lambda-APIGateway-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3)*
+
+[AerospecUsedCodes/Hologram-Lambda-APIGateway-S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Lambda-APIGateway-S3)
 
 8-7-19 modified round down function to accept the resolution as a parameter and changed device_name to integer field.
 
@@ -44,7 +45,7 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
 ### Plantower, VMA309, SIM7000, Hologram Cloud, TCP/IP, Average data
 *7-26-19 8-7-19 Current Version*
 
-[Hologram-TCP-Sensor-Average](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)*
+[Hologram-TCP-Sensor-Average](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)
 
 8-7-19 read and sent battery level instead of noise.
 
