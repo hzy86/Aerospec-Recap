@@ -18,7 +18,7 @@ Updated exceptions handling so that:
 
 
 ### Device Data Webhook with Lambda and API Gateway REST API
-*7-13-19, 7-27-19, 8-7-19 Current Version* [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/Hologram-Lambda-APIGateway-S3)
+*7-13-19, 7-27-19, 8-7-19 Current Version* [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/deviceWebhookLambda)
 
 8-8 added hour round down and re-formatted multi-line strings
 
