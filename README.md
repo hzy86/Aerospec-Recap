@@ -7,13 +7,20 @@ Code repo AerosepcUsedCodes is private to protect our products in production. Pl
 
 ## LambdaPackages
 ### World Pollution Data Lambda Requests and DB Insertion
-*8-7-19 Current version* [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
+*8-7-19, Current version* [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
 
-Make GET requests to WAQI API and insert them into the database. Converted time strings into UTC. Handled exceptions.
+Make GET requests to WAQI API and insert them into the database. Converted time strings into UTC.
+
+Updated exceptions handling so that:
+- end execution if any field is not formatted correctly, esepcially geolocation, station id, and time.
+- print error station id and corresponding error messages.
+- print success message and station count
 
 
-### Hologram Cloud, Lambda, API Gateway, S3
+### Device Data Webhook with Lambda and API Gateway REST API
 *7-13-19, 7-27-19, 8-7-19 Current Version* [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/Hologram-Lambda-APIGateway-S3)
+
+8-8 added hour round down and re-formatted multi-line strings
 
 8-7-19 modified round down function to accept the resolution as a parameter and changed device_name to integer field.
 
