@@ -7,7 +7,7 @@ Code repo AerosepcUsedCodes is private to protect our products in production. Pl
 
 ## LambdaPackages
 ### World Pollution Data Lambda Requests and DB Insertion
-*8-7-19, Current version* [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
+*8-7-19* [Current version](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
 
 Make GET requests to WAQI API and insert them into the database. Converted time strings into UTC.
 
@@ -18,16 +18,16 @@ Updated exceptions handling so that:
 
 
 ### Device Data Webhook with Lambda and API Gateway REST API
-*7-13-19, 7-27-19, 8-7-19 Current Version* [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/deviceWebhookLambda)
+*7-13, 7-27, 8-7-19* [Current Version](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/deviceWebhookLambda)
 
 8-8 added hour round down and re-formatted multi-line strings
 
-8-7-19 modified round down function to accept the resolution as a parameter and changed device_name to integer field.
+8-7 modified round down function to accept the resolution as a parameter and changed device_name to integer field.
 
 7-27-19 updated the Lambda codes to round time_created to the nearest 5 min and and insert into the db table new column ```time_label```. Also inserted device name and inserted into new column ```device_name```.
 
 ## Dweetio, Lambda, Cloudwatch, S3 
-*7-13-19 Ditched* [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)
+*7-13-19* [Outdated](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)
 
 Use HTTP GET and params to post data to Dweetio from the LTE shield. Then use Lambda to get data from Dweetio and insert into the database. Schedule Lambda trigger using Cloudwatch.
 
@@ -38,7 +38,6 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   - be sure to modify the Handler in Function codes of of the Lambda setup to match the function name, otherwise Lambda coud not find the main function
 
 * **Files Breakdown**
-  *[src](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)*
   - requirements.txt
 
     Requried packages. Psycopg2 needs to be built. Someone had do it for us. Follow his instructions in this github [psycopg2 to Lambda](https://github.com/jkehler/awslambda-psycopg2).
@@ -54,8 +53,16 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   
 # Firmware
 
+## TCP/IP Send & Receive
+*8-10-19* [Current Version](https://github.com/hzy86/AerospecUsedCodes/tree/master/TCP-Full-Duplex-8-10)
+
+Supported SIM module restart by messaging "restart" to Hologram Cloud. 
+
+Setup a TCP server on the device that listens to a port and polls data every 4 samples. If "restart" is found, power off the module and power it back on after 5 seconds. The port is configured on Hologram Dashboard. 
+
+
 ## Plantower, VMA309, SIM7000, Hologram Cloud, TCP/IP, Average data
-*7-26-19 8-7-19 Current Version* [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)
+*7-26, 8-7-19* [Outdated](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)
 
 8-7-19 read and sent battery level instead of noise.
 
@@ -64,17 +71,17 @@ Sample data every xxx seconds, upload the average of the samples every 5 mins.
 Solved a fun problem - consecutive ```dtostr(data, length, precision, buffer)``` might be using consecutive memory for buffers! We observed that if the buffer size of the last called ```dtostr``` equals to ```length``` (not enough space for the terminator char), the terminator would be stored in index 0 of the buffer used by the 2nd last ```dtostr```. As a result, Serial.print(the 2nd last buffer) would print nothing.
 
 ## Twilio, T-mobile Narrowband SIM
-*7-17-19 Currently exploring [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)*
+*7-17-19* [Currently exploring](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)
 
 Try to use Twilio for our product for its compactness.
 
 ### Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol
-*7-13-19,7-25-19 Outdated [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise-TCP)*
+*7-13,7-25-19*[Outdated](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise-TCP)
 
 Also gather GPS info via SIM7000. 7-25 fix corrected GPS read.
 
 ## SPS30 Particle Sensor
-*6-18-19 Outdated [src](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)*
+*6-18-19* [Outdated](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)
 
 Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
 
