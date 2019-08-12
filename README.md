@@ -1,7 +1,7 @@
 # Overview
 This is a progress diary for recapping what was a major progress but replaced by something better later. 
 
-Code repo AerosepcUsedCodes is private to protect our products in production. Please send me a messagew if you would like to see it via [Linkedin](https://www.linkedin.com/in/ziyi-huang86/) or Email hzy066@gmail.com.
+Code repo AerosepcUsedCodes is private to protect our products in production. Please send me a message if you would like to see it via [Linkedin](https://www.linkedin.com/in/ziyi-huang86/) or Email hzy066@gmail.com.
 
 # Software
 
@@ -54,11 +54,13 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
 # Firmware
 
 ## TCP/IP Send & Receive
-*8-10-19* [Current Version](https://github.com/hzy86/AerospecUsedCodes/tree/master/TCP-Full-Duplex-8-10)
+*8-10, 8-11-19* [Current Version](https://github.com/hzy86/AerospecUsedCodes/tree/master/TCP-Full-Duplex-8-10)
 
-Supported SIM module restart by messaging "restart" to Hologram Cloud. 
+Supported SIM module control by messaging commands from the Hologram Dashboard. 
 
-Setup a TCP server on the device that listens to a port and polls data every 4 samples. If "restart" is found, power off the module and power it back on after 5 seconds. The port is configured on Hologram Dashboard. 
+Setup a TCP server on the device that listens to a port and polls data every 4 samples. If "restart" is found, power off the module and power it back on after 5 seconds. The port is configured on Hologram Dashboard.
+
+8-11 updated polling logic and added software commands to reset module, enable/disable data sending, and specifying upload frequency.
 
 
 ## Plantower, VMA309, SIM7000, Hologram Cloud, TCP/IP, Average data
