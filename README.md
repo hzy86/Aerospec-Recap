@@ -3,11 +3,10 @@ This is a progress diary for recapping what was a major progress but replaced by
 
 Code repo AerosepcUsedCodes is private to protect our products in production. Please send me a message if you would like to see it via [Linkedin](https://www.linkedin.com/in/ziyi-huang86/) or Email hzy066@gmail.com.
 
-# Software
-
+# Current versions
 ## LambdaPackages
-### World Pollution Data Lambda Requests and DB Insertion
-*8-7-19* [Current version](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
+### [World Pollution Data Lambda Requests and DB Insertion](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
+*8-7-19*
 
 Make GET requests to WAQI API and insert them into the database. Converted time strings into UTC.
 
@@ -17,14 +16,29 @@ Updated exceptions handling so that:
 - print success message and station count
 
 
-### Device Data Webhook with Lambda and API Gateway REST API
-*7-13, 7-27, 8-7-19* [Current Version](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/deviceWebhookLambda)
+### [Device Data Webhook with Lambda and API Gateway REST API](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/deviceWebhookLambda)
+*7-13, 7-27, 8-7-19*
 
 8-8 added hour round down and re-formatted multi-line strings
 
 8-7 modified round down function to accept the resolution as a parameter and changed device_name to integer field.
 
 7-27-19 updated the Lambda codes to round time_created to the nearest 5 min and and insert into the db table new column ```time_label```. Also inserted device name and inserted into new column ```device_name```.
+
+## Firmware - [TCP/IP Send & Receive](https://github.com/hzy86/AerospecUsedCodes/tree/master/TCP-Full-Duplex-8-10)
+*8-10, 8-11, 8-12-19*
+
+Supported SIM module control by messaging commands from the Hologram Dashboard.
+
+Setup a TCP server on the device that listens to a port and polls data constantly.
+
+8-12 added server responses after receiving a command. Separated LTE codes to another file for better readabilitiy. Removed noise sensor stuff.
+
+8-11 updated polling logic and added software commands to reset module, enable/disable data sending, and specifying upload frequency.
+
+
+
+# Software
 
 ## Dweetio, Lambda, Cloudwatch, S3 
 *7-13-19* [Outdated](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)
@@ -52,16 +66,6 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   
   
 # Firmware
-
-## TCP/IP Send & Receive
-*8-10, 8-11-19* [Current Version](https://github.com/hzy86/AerospecUsedCodes/tree/master/TCP-Full-Duplex-8-10)
-
-Supported SIM module control by messaging commands from the Hologram Dashboard. 
-
-Setup a TCP server on the device that listens to a port and polls data every 4 samples. If "restart" is found, power off the module and power it back on after 5 seconds. The port is configured on Hologram Dashboard.
-
-8-11 updated polling logic and added software commands to reset module, enable/disable data sending, and specifying upload frequency.
-
 
 ## Plantower, VMA309, SIM7000, Hologram Cloud, TCP/IP, Average data
 *7-26, 8-7-19* [Outdated](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)
