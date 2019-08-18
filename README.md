@@ -4,8 +4,7 @@ This is a progress diary for recapping what was a major progress but replaced by
 Code repo AerosepcUsedCodes is private to protect our products in production. Please send me a message if you would like to see it via [Linkedin](https://www.linkedin.com/in/ziyi-huang86/) or Email hzy066@gmail.com.
 
 # Current versions
-## Django API Backend
-### Django REST Framework
+## Django REST Framework
 **ViewSet**
 
 Compared to view and generic views, viewset reduces codes by integrating multiple APIView classes into one
@@ -29,7 +28,8 @@ Compared to view and generic views, viewset reduces codes by integrating multipl
 - token
 
 ## LambdaPackages
-### [World Pollution Data Lambda Requests and DB Insertion](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
+[World Pollution Data Lambda Requests and DB Insertion](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
+
 *8-7-19*
 
 Make GET requests to WAQI API and insert them into the database. Converted time strings into UTC.
@@ -40,7 +40,8 @@ Updated exceptions handling so that:
 - print success message and station count
 
 
-### [Device Data Webhook with Lambda and API Gateway REST API](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/deviceWebhookLambda)
+[Device Data Webhook with Lambda and API Gateway REST API](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/deviceWebhookLambda)
+
 *7-13, 7-27, 8-7-19*
 
 8-8 added hour round down and re-formatted multi-line strings
@@ -49,7 +50,8 @@ Updated exceptions handling so that:
 
 7-27-19 updated the Lambda codes to round time_created to the nearest 5 min and and insert into the db table new column ```time_label```. Also inserted device name and inserted into new column ```device_name```.
 
-## Firmware - [TCP/IP Send & Receive](https://github.com/hzy86/AerospecUsedCodes/tree/master/TCP-Full-Duplex-8-10)
+Firmware - [TCP/IP Send & Receive](https://github.com/hzy86/AerospecUsedCodes/tree/master/TCP-Full-Duplex-8-10)
+
 *8-10, 8-11, 8-12-19*
 
 Supported SIM module control by messaging commands from the Hologram Dashboard.
@@ -64,7 +66,8 @@ Setup a TCP server on the device that listens to a port and polls data constantl
 
 # Software
 
-## [Dweetio, Lambda, Cloudwatch, S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)
+[Dweetio, Lambda, Cloudwatch, S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)
+
 *7-13-19* Outdated
 Use HTTP GET and params to post data to Dweetio from the LTE shield. Then use Lambda to get data from Dweetio and insert into the database. Schedule Lambda trigger using Cloudwatch.
 
@@ -90,7 +93,8 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   
 # Firmware
 
-## [Plantower, VMA309, SIM7000, Hologram Cloud, TCP/IP, Average data](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)
+[Plantower, VMA309, SIM7000, Hologram Cloud, TCP/IP, Average data](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)
+
 *7-26, 8-7-19* Outdated
 
 8-7-19 read and sent battery level instead of noise.
@@ -99,17 +103,20 @@ Sample data every xxx seconds, upload the average of the samples every 5 mins.
 
 Solved a fun problem - consecutive ```dtostr(data, length, precision, buffer)``` might be using consecutive memory for buffers! We observed that if the buffer size of the last called ```dtostr``` equals to ```length``` (not enough space for the terminator char), the terminator would be stored in index 0 of the buffer used by the 2nd last ```dtostr```. As a result, Serial.print(the 2nd last buffer) would print nothing.
 
-## [Twilio, T-mobile Narrowband SIM](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)
+[Twilio, T-mobile Narrowband SIM](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)
+
 *7-17-19* Currently exploring
 
 Try to use Twilio for our product for its compactness.
 
-### [Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise-TCP)
+[Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise-TCP)
+
 *7-13,7-25-19*Outdated
 
 Also gather GPS info via SIM7000. 7-25 fix corrected GPS read.
 
-## [SPS30 Particle Sensor](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)
+[SPS30 Particle Sensor](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)
+
 *6-18-19* Outdated
 
 Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
