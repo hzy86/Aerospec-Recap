@@ -64,9 +64,8 @@ Setup a TCP server on the device that listens to a port and polls data constantl
 
 # Software
 
-## Dweetio, Lambda, Cloudwatch, S3 
-*7-13-19* [Outdated](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)
-
+## [Dweetio, Lambda, Cloudwatch, S3](https://github.com/hzy86/AerospecUsedCodes/tree/master/Dweetio-Lambda-Cloudwatch-S3)
+*7-13-19* Outdated
 Use HTTP GET and params to post data to Dweetio from the LTE shield. Then use Lambda to get data from Dweetio and insert into the database. Schedule Lambda trigger using Cloudwatch.
 
 To deploy, install all packages specified in ```requirements.txt```, and then place them in the same folder as aerospeclambdards.py file that defined a ```handler(event, context)``` function. CTRL+A to select all, right click on aerospeclambdards.py to zip, run ```aws CLI command #1``` in its parent folder to upload to S3, and finally run ```aws CLI command #2``` to update Lambda codes.
@@ -91,8 +90,8 @@ To deploy, install all packages specified in ```requirements.txt```, and then pl
   
 # Firmware
 
-## Plantower, VMA309, SIM7000, Hologram Cloud, TCP/IP, Average data
-*7-26, 8-7-19* [Outdated](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)
+## [Plantower, VMA309, SIM7000, Hologram Cloud, TCP/IP, Average data](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-TCP-Sensor-Average)
+*7-26, 8-7-19* Outdated
 
 8-7-19 read and sent battery level instead of noise.
 
@@ -100,18 +99,18 @@ Sample data every xxx seconds, upload the average of the samples every 5 mins.
 
 Solved a fun problem - consecutive ```dtostr(data, length, precision, buffer)``` might be using consecutive memory for buffers! We observed that if the buffer size of the last called ```dtostr``` equals to ```length``` (not enough space for the terminator char), the terminator would be stored in index 0 of the buffer used by the 2nd last ```dtostr```. As a result, Serial.print(the 2nd last buffer) would print nothing.
 
-## Twilio, T-mobile Narrowband SIM
-*7-17-19* [Currently exploring](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)
+## [Twilio, T-mobile Narrowband SIM](https://github.com/hzy86/AerospecUsedCodes/tree/master/twilio-prototype)
+*7-17-19* Currently exploring
 
 Try to use Twilio for our product for its compactness.
 
-### Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol
-*7-13,7-25-19*[Outdated](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise-TCP)
+### [Plantower, VMA309, SIM7000, Hologram Cloud, TCP protocol](https://github.com/hzy86/AerospecUsedCodes/tree/master/Hologram-Plantower-Noise-TCP)
+*7-13,7-25-19*Outdated
 
 Also gather GPS info via SIM7000. 7-25 fix corrected GPS read.
 
-## SPS30 Particle Sensor
-*6-18-19* [Outdated](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)
+## [SPS30 Particle Sensor](https://github.com/hzy86/AerospecUsedCodes/tree/master/sps30-LTE)
+*6-18-19* Outdated
 
 Gather particle information using sps30 sensor and upload it to Dweetio using SIM7000 LTE module. This was only used as a small test.
 
