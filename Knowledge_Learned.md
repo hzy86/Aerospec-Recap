@@ -75,6 +75,17 @@ Compared to view and generic views, viewset reduces codes by integrating multipl
 * Google API
 * responsive UI design
 
+## Git
+```git revert <commit>``` to undo this commit and create a new commit for this, i.e. revert to its parent commit, avoiding detached head.
+
+``` git reset <commit>``` to undo this comment and delete all commits after this commit.
+
+```git checkout <commit>``` to change files previously without affecting current branch and head. Would be in a DETACHED HEAD state.
+
+```git stash``` to undo local changes, can be restored by ```git stash apply stash@{#}```, which can be seen from ```git stash list```
+
+```git push/pull origin <branch>``` to push/pull to/from a remote branch that is on remote *origin*. ```git branch --set-upstream``` set the default remote branch for this local branch. ```git checkout <branch>``` to change the current directory to the branch.
+
 ## Soft skills
 * Learning from source codes, sample codes, documentations, ...
 * Unit debugging
