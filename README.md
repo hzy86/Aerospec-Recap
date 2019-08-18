@@ -4,23 +4,30 @@ This is a progress diary for recapping what was a major progress but replaced by
 Code repo AerosepcUsedCodes is private to protect our products in production. Please send me a message if you would like to see it via [Linkedin](https://www.linkedin.com/in/ziyi-huang86/) or Email hzy066@gmail.com.
 
 # Current versions
-## Django Backend
-### REST API
-- filters
-  - [API with filters example](https://sunscrapers.com/blog/the-ultimate-tutorial-for-django-rest-framework-filtering-part-5/)
-  - [Django supported lookup names](https://docs.djangoproject.com/en/2.2/ref/models/querysets/)
-  - [django-filter documentation](https://django-filter.readthedocs.io/en/latest/index.html)
-  - use customized filter class to alias lookup expressions
-    - alias can be the same as field_name ??? (seems to work for now, need further proof)
+## Django API Backend
+### Django REST Framework
+**ViewSet**
+
+Compared to view and generic views, viewset reduces codes by integrating multiple APIView classes into one
+  
+  *viewset sub classes*
+  - filters
+    - reduce the need of regex url matching or ```self.request.data``` to access query params
+    - customized filter class to alias lookup expressions
+      - alias can be the same as field_name ??? (seems to work for now, need further proof)
+    - ordering
+  - pagination - support limit and offset
+  - serializer
+  
+**Router**
+  - works with viewset
+  - auto-generate a range of urls that bind to basic CRUD functions like list, retrieve, update, etc
+  
+**Authentication**
 - CORS
   - use django-cors-headers packages
-- authentication
-- Django REST Framework
-  - viewset vs view vs generic views
-    - viewset reduces codes by integrating multiple APIView classes into one
-  - parameter filtering ```{lookup}``` vs function ```{url_path}```
-  - router
-    - works with viewset to reduce the need of regex url matching
+- token
+
 ## LambdaPackages
 ### [World Pollution Data Lambda Requests and DB Insertion](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
 *8-7-19*
