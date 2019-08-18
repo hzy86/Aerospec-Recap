@@ -4,6 +4,18 @@ This is a progress diary for recapping what was a major progress but replaced by
 Code repo AerosepcUsedCodes is private to protect our products in production. Please send me a message if you would like to see it via [Linkedin](https://www.linkedin.com/in/ziyi-huang86/) or Email hzy066@gmail.com.
 
 # Current versions
+## Django Backend
+### REST API
+- filters
+  - [API with filters example](https://sunscrapers.com/blog/the-ultimate-tutorial-for-django-rest-framework-filtering-part-5/)
+  - [Django supported lookup names](https://docs.djangoproject.com/en/2.2/ref/models/querysets/)
+- CORS
+  - use django-cors-headers packages
+- authentication
+- Django REST Framework
+  - viewset vs view vs generic views
+  - parameter filtering ```{lookup}``` vs function ```{url_path}```
+  - router
 ## LambdaPackages
 ### [World Pollution Data Lambda Requests and DB Insertion](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
 *8-7-19*
