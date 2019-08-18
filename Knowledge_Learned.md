@@ -31,9 +31,9 @@ Strings handling - ```dtostr()```, ```sprintf```, etc. Null-terminator, char buf
   * HTTPResponse to make a REST API
   * render
   * using models
-* Management
-  * requirements.txt
-  * settings.py for static url, media url, hosts, database, etc
+* Deployment flow
+  * ```pip freeze > requirements.txt```
+  * settings.py for static url, media url, hosts, database, etc. Have an empty ```static``` folder if needed.
   * deploy to Heroku - Gunicorn for running server, Whitenoise for serving static files, psycopg2 for database engine
 ### Django REST Framework
 **ViewSet**
