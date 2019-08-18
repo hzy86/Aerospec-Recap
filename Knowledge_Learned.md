@@ -32,6 +32,7 @@ Strings handling - ```dtostr()```, ```sprintf```, etc. Null-terminator, char buf
   * render
   * using models
 * Deployment flow
+  * have a ```.gitignore``` ready.
   * ```pip freeze > requirements.txt```
   * settings.py for static url, media url, hosts, database, etc. Have an empty ```static``` folder if needed.
   * deploy to Heroku - Gunicorn for running server, Whitenoise for serving static files, psycopg2 for database engine
