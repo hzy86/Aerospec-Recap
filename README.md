@@ -4,29 +4,6 @@ This is a progress diary for recapping what was a major progress but replaced by
 Code repo AerosepcUsedCodes is private to protect our products in production. Please send me a message if you would like to see it via [Linkedin](https://www.linkedin.com/in/ziyi-huang86/) or Email hzy066@gmail.com.
 
 # Current versions
-### Django REST Framework
-**ViewSet**
-
-Compared to view and generic views, viewset reduces codes by integrating multiple APIView classes into one
-  
-  *viewset sub classes*
-  - filters
-    - reduce the need of regex url matching or ```self.request.data``` to access query params
-    - customized filter class to alias lookup expressions
-      - alias can be the same as field_name ??? (seems to work for now, need further proof)
-    - ordering
-  - pagination - support limit and offset
-  - serializer
-  
-**Router**
-  - works with viewset
-  - auto-generate a range of urls that bind to basic CRUD functions like list, retrieve, update, etc
-  
-**Authentication**
-- CORS
-  - use django-cors-headers packages
-- token
-
 ### LambdaPackages
 [World Pollution Data Lambda Requests and DB Insertion](https://github.com/hzy86/AerospecUsedCodes/tree/master/LambdaPackages/worldPollutionLambda)
 
