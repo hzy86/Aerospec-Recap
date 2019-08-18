@@ -9,6 +9,7 @@ Code repo AerosepcUsedCodes is private to protect our products in production. Pl
 - filters
   - [API with filters example](https://sunscrapers.com/blog/the-ultimate-tutorial-for-django-rest-framework-filtering-part-5/)
   - [Django supported lookup names](https://docs.djangoproject.com/en/2.2/ref/models/querysets/)
+  - [django-filter documentation](https://django-filter.readthedocs.io/en/latest/index.html)
 - CORS
   - use django-cors-headers packages
 - authentication
