@@ -87,6 +87,10 @@ Compared to view and generic views, viewset reduces codes by integrating multipl
 
 ```git push/pull origin <branch>``` to push/pull to/from a remote branch that is on remote *origin*. ```git branch --set-upstream``` set the default remote branch for this local branch. ```git checkout <branch>``` to change the current directory to the branch.
 
+```git merge --no-ff <branch>```, ```git rebase```, etc
+
+[Solution for Git not generating merge conflicts](https://stackoverflow.com/questions/40097125/git-shows-no-merge-conflicts-when-it-should)
+
 ## Soft skills
 * Learning from source codes, sample codes, documentations, ...
 * Unit debugging
