@@ -18,6 +18,35 @@ Strings handling - ```dtostr()```, ```sprintf```, etc. Null-terminator, char buf
 - configured TCP server and client, designated data segment length, and transported data programmatically
 - setup software webhook receiver API and configure webhook route from Hologram Cloud Platform to enable real-time data processing
 
+### TCP/IP protocol
+- as a client - connect to remote IP address via specified port
+- as a server - configure local IP adress and port and allow remote client to connect in
+- header contains
+ - src and remote IP
+ - packet size and data
+ - etc
+ 
+### MQTT protocol
+[src](https://www.hivemq.com/blog/mqtt-essentials-part2-publish-subscribe/)
+- pub/sub model, allow 
+ - space decoupling: subscribers and publishers do not need to know each other
+ - time decoupiling: subscribers and publishers do not need to be online at the same time
+ - async processing
+- different from message queue due to
+ - do not need a message in queue to be consumed before the next one can
+ - more than 1 client can consume a message
+ - creating topics is flexible while queue must be existing
+- connection
+ - broker closes down after timeout or it receives a malformed connection packet
+ - a good connection packet contains
+  - clientID - broker uses this to identify a client and store its state. If empty, cleansession must be true for the broker to accept the connection. The broker would establish the connection without storing the states of the client.
+  - username&passord - plain text if unencrypted and unhashed (by implementation or TLS certificate).
+  - cleansession - if false, the session is persistent, meaning that the broker will store the subscriptions and missed messages for the client with QoS 1 or 2.
+  - keep alive
+  - topic, QoS, message, retain ???
+ - upon connection established, the broker would send a CONNACK flag that contains
+  - session present flag - allow users to know
+
 ## Full-stack cloud software
 ### Django MTV Basics
 * Models
